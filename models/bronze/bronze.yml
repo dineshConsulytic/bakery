@@ -1,0 +1,8 @@
+version: 2
+ 
+sources:
+  - name: raw
+    database: Staging_Lakehouse
+    schema: dbo
+    tables:
+      - name: suriname_hourly_weather

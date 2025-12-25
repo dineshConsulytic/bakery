@@ -1,0 +1,17 @@
+# IMPORTANT!!!
+# Before each dev cycle check the most stable version of each package on https://pypi.org/project
+# 
+
+name: dbt_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - dbt-core==1.11.2     # The main dbt engine
+    - dbt-fabric==1.9.8    # Adapter for Microsoft Fabric
+    # - dbt-sqlserver==1.7.0 # Use this instead if connecting to local SQL Server
+    - pandas
+    - azure-identity       # Required for Fabric authentication
