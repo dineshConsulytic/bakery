@@ -2,7 +2,6 @@
 # Before each dev cycle check the most stable version of each package on https://pypi.org/project
 # 
 
-name: dbt_env
 channels:
   - conda-forge
   - defaults
