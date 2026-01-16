@@ -2,7 +2,17 @@ version: 2
  
 sources:
   - name: raw
-    database: Staging_Lakehouse
-    schema: dbo
+    database: bronze
+    schema: adventure_works
     tables:
-      - name: suriname_hourly_weather
+      - name: Address
+      - name: Customer
+      - name: CustomerAddress
+      - name: Date
+      - name: Product
+      - name: ProductCategory
+      - name: ProductDescription
+      - name: ProductModel
+      - name: ProductModelProductDescription
+      - name: SalesOrderDetail
+      - name: SalesOrderHeader
